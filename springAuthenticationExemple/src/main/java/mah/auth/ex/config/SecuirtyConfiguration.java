@@ -28,7 +28,7 @@ public class SecuirtyConfiguration extends WebSecurityConfigurerAdapter {
 		 .passwordEncoder(getPasswordEncoder()); 
 	}
 	
-	protected void configure(HttpSecurity httpSecure) throws Exception {
+	protected void  configure(HttpSecurity httpSecure) throws Exception {
 		httpSecure.csrf().disable();
 		httpSecure.authorizeRequests()
 			.antMatchers("**/secuired/**").authenticated()
