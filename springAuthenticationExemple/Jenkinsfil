@@ -1,0 +1,9 @@
+node {
+	stage('SCM checkout'){
+		git checkout 
+	}
+	
+	stage('SCM checkout'){
+		mvn clean install -DskipTests 
+	}
+}
