@@ -1,5 +1,7 @@
 package mah.auth.ex;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,6 +13,7 @@ public class SpringAuthenticationExempleApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		assertEquals("", "");
 	}
 
 }
