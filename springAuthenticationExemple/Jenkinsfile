@@ -4,6 +4,8 @@ node {
 	}
 	
 	stage('SCM checkout'){
-		mvn clean install -DskipTests 
+	def mvnhome  = tool name: 'maven3', type: 'maven'
+		  clean install -DskipTests 
+		  "${mvnhome}/bin/mvn  package"
 	}
 }
